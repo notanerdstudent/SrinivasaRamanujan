@@ -1,0 +1,108 @@
+/* ! Sections */
+.home-section,
+.about-section,
+.skills,
+.portfolio,
+.services,
+.contact {
+  margin-top: 20px;
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+  height: calc(100vh - 50px);
+  padding: 70px 10%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  font-family: "Playfair Display", serif;
+  color: white;
+  align-items: center;
+}
+
+/* ? Colored Title */
+.home-content h3 span,
+.about-content .title span,
+.skills .title span,
+.portfolio .title span,
+.services .title span,
+.contact .title span {
+  background-image: linear-gradient(
+    to right,
+    #ff004c 1em,
+    #fe9000 3em,
+    #fff020 5em,
+    #3edf4b 7em,
+    #3363ff 10em,
+    #ff004c 13em
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 35s linear infinite;
+}
+
+/* ! Section Headings */
+
+.about-content .title,
+.skills .title,
+.portfolio .title,
+.services .title,
+.contact .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.about-content .title span,
+.skills .title span,
+.portfolio .title span,
+.services .title span,
+.contact .title span {
+  color: var(--color);
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.about-content .title span::before,
+.about-content .title span::after,
+.skills .title span::before,
+.skills .title span::after,
+.portfolio .title span::before,
+.portfolio .title span::after,
+.services .title span::before,
+.services .title span::after,
+.contact .title span::before,
+.contact .title span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--color);
+  left: 0;
+  bottom: 0;
+}
+
+.about-content .title span::after,
+.skills .title span::after,
+.portfolio .title span::after,
+.services .title span::after,
+.contact .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes moveBorder {
+  0% {
+    background-position: 100em 0;
+  }
+
+  100% {
+    background-position: -100em 0;
+  }
+}

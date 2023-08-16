@@ -1,0 +1,128 @@
+/* * Responsive */
+
+@media screen and (max-width: 1255px) {
+  .img-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-details .left {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+
+  .left img {
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  .about-details .right {
+    font-size: 15px;
+    width: 65%;
+  }
+
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-box .portfolio-layer {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .img-box {
+    height: 270px;
+    width: 270px;
+  }
+
+  .left img {
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .about-details .right {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .img-box {
+    height: 250px;
+    width: 250px;
+  }
+
+  .left img {
+    height: 180px !important;
+    width: 180px !important;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  body {
+    padding: 0px;
+    max-width: 100%;
+    margin: 0px;
+  }
+
+  .home-section {
+    text-align: center;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .home-img {
+    margin-bottom: 30px;
+  }
+
+  .about-details {
+    flex-direction: column-reverse;
+  }
+
+  .about-details .left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .left img {
+    display: none;
+  }
+
+  .about-details .right {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .topic {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .portfolio-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .skills-content {
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-content {
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 2rem;
+    align-items: center;
+    text-align: initial;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .skills-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

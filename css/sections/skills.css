@@ -1,0 +1,81 @@
+/* ! Skills Section */
+.skills {
+  min-height: 100vh;
+  height: auto;
+}
+
+.skills-content {
+  display: grid;
+  margin: 0 2rem;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.skills-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  background: var(--background);
+}
+
+.skills-icon {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: var(--color);
+}
+
+.skills-name {
+  display: flex;
+  align-items: center;
+}
+
+.skills-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--color);
+  height: 0.25rem;
+  border-radius: 0.5rem;
+  z-index: 100;
+}
+
+.skills-subtitle {
+  margin-bottom: 2rem;
+}
+
+.skills-text {
+  margin-bottom: 4rem;
+}
+
+.skills-img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.skills-percent {
+  color: var(--color);
+}
+
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 75%;
+}
+
+.skills__js {
+  width: 80%;
+}
+
+.skills__php {
+  width: 95%;
+}

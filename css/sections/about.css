@@ -1,0 +1,96 @@
+/* ? About Section */
+.about-section {
+  min-height: calc(100vh - 115px);
+  height: auto;
+  display: block;
+}
+
+.about-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-details .left {
+  width: 35%;
+  text-align: center;
+}
+
+.about-details .left img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  height: 5em;
+  width: 14em;
+  position: relative;
+  box-shadow: 0 1.25em 2.18em rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.31em;
+}
+
+button:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: repeating-linear-gradient(
+    to right,
+    #fd004c 2.62em,
+    #fe9000 5.25em,
+    #fff020 7.87em,
+    #3edf4b 10.5em,
+    #3363ff 15.75em,
+    #fd004c 18.75em
+  );
+  background-size: 125em;
+}
+
+button:after {
+  content: "Know More";
+  position: absolute;
+  background-color: #1c1b29;
+  height: 90%;
+  width: 95%;
+  justify-content: center;
+  top: 5%;
+  left: 2.5%;
+  border-radius: 0.2em;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  place-items: center;
+}
+
+button:hover:before {
+  background-position: -106.25em 0;
+  animation: moveBorder 10s linear infinite;
+}
+
+.about-details .right {
+  width: 65%;
+}
+
+.topic {
+  color: var(--color);
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: white;
+}
