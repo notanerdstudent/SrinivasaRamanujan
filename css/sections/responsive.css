@@ -21,11 +21,11 @@
     width: 65%;
   }
 
-  .portfolio-content {
+  .contributions-content {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .portfolio-box .portfolio-layer {
+  .contributions-box .contributions-layer {
     padding: 0 2rem;
   }
 }
@@ -98,13 +98,13 @@
   }
 }
 @media screen and (max-width: 700px) {
-  .portfolio-content {
+  .contributions-content {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (min-width: 576px) {
-  .skills-content {
+  .lifework-content {
     grid-template-columns: 0.7fr;
     justify-content: center;
     column-gap: 1rem;
@@ -112,7 +112,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .skills-content {
+  .lifework-content {
     grid-template-columns: repeat(2, 1fr) !important;
     column-gap: 2rem;
     align-items: center;
@@ -121,7 +121,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .skills-content {
+  .lifework-content {
     margin-left: auto;
     margin-right: auto;
   }

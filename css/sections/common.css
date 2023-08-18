@@ -1,8 +1,8 @@
 /* ! Sections */
 .home-section,
 .about-section,
-.skills,
-.portfolio,
+.lifework,
+.contributions,
 .services,
 .contact {
   margin-top: 20px;
@@ -24,8 +24,8 @@
 /* ? Colored Title */
 .home-content h3 span,
 .about-content .title span,
-.skills .title span,
-.portfolio .title span,
+.lifework .title span,
+.contributions .title span,
 .services .title span,
 .contact .title span {
   background-image: linear-gradient(
@@ -46,8 +46,8 @@
 /* ! Section Headings */
 
 .about-content .title,
-.skills .title,
-.portfolio .title,
+.lifework .title,
+.contributions .title,
 .services .title,
 .contact .title {
   display: flex;
@@ -56,8 +56,8 @@
 }
 
 .about-content .title span,
-.skills .title span,
-.portfolio .title span,
+.lifework .title span,
+.contributions .title span,
 .services .title span,
 .contact .title span {
   color: var(--color);
@@ -69,10 +69,10 @@
 
 .about-content .title span::before,
 .about-content .title span::after,
-.skills .title span::before,
-.skills .title span::after,
-.portfolio .title span::before,
-.portfolio .title span::after,
+.lifework .title span::before,
+.lifework .title span::after,
+.contributions .title span::before,
+.contributions .title span::after,
 .services .title span::before,
 .services .title span::after,
 .contact .title span::before,
@@ -87,8 +87,8 @@
 }
 
 .about-content .title span::after,
-.skills .title span::after,
-.portfolio .title span::after,
+.lifework .title span::after,
+.contributions .title span::after,
 .services .title span::after,
 .contact .title span::after {
   bottom: -7px;

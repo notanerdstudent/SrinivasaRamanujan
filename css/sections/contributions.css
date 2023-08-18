@@ -1,18 +1,18 @@
-/* ? Portfolio Section */
-.portfolio {
+/* ? contributions Section */
+.contributions {
   min-height: calc(100vh - 100px);
   height: auto;
   display: block;
 }
 
-.portfolio-content {
+.contributions-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 
-.portfolio-content .portfolio-box {
+.contributions-content .contributions-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--background);
@@ -20,18 +20,18 @@
   display: flex;
 }
 
-.portfolio-box img {
+.contributions-box img {
   width: 100%;
   transition: 0.5s ease;
 }
 
-.portfolio-box:hover img {
+.contributions-box:hover img {
   transform: scale(1.1);
   webkit-filter: blur(4px); /* Chrome, Safari, Opera */
   filter: blur(4px);
 }
 
-.portfolio-box .portfolio-layer {
+.contributions-box .contributions-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -48,22 +48,22 @@
   transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.contributions-box:hover .contributions-layer {
   transform: translateY(0);
 }
 
-.portfolio-layer h4 {
+.contributions-layer h4 {
   color: #000;
   font-size: 30px;
 }
 
-.portfolio-layer p {
+.contributions-layer p {
   color: #000;
   font-size: 15px;
   margin: 0.3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.contributions-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@
   border-radius: 50%;
 }
 
-.portfolio-layer a i {
+.contributions-layer a i {
   font-size: 20px;
   color: var(--color);
 }
