@@ -27,6 +27,8 @@
 
 .portfolio-box:hover img {
   transform: scale(1.1);
+  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  filter: blur(4px);
 }
 
 .portfolio-box .portfolio-layer {
@@ -51,10 +53,12 @@
 }
 
 .portfolio-layer h4 {
+  color: #000;
   font-size: 30px;
 }
 
 .portfolio-layer p {
+  color: #000;
   font-size: 15px;
   margin: 0.3rem 0 1rem;
 }

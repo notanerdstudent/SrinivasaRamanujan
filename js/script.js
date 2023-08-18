@@ -173,10 +173,10 @@ var typed = new Typed(".multi-text", {
   ],
   smartBackspace: true,
   loop: true,
-  typeSpeed: 100,
+  typeSpeed: 50,
   startDelay: 1000,
-  backDelay: 1000,
-  backSpeed: 100,
+  backDelay: 750,
+  backSpeed: 50,
 });
 // ? Typed Effect
 
