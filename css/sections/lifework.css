@@ -64,18 +64,10 @@
   color: var(--color);
 }
 
-.lifework__html {
-  width: 90%;
+.lifework__iq {
+  width: 100%;
 }
 
-.lifework__css {
+.lifework__theories {
   width: 75%;
-}
-
-.lifework__js {
-  width: 80%;
-}
-
-.lifework__php {
-  width: 95%;
 }

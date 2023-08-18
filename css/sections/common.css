@@ -3,7 +3,7 @@
 .about-section,
 .lifework,
 .contributions,
-.services,
+.significance,
 .contact {
   margin-top: 20px;
   box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
@@ -26,7 +26,7 @@
 .about-content .title span,
 .lifework .title span,
 .contributions .title span,
-.services .title span,
+.significance .title span,
 .contact .title span {
   background-image: linear-gradient(
     to right,
@@ -48,7 +48,7 @@
 .about-content .title,
 .lifework .title,
 .contributions .title,
-.services .title,
+.significance .title,
 .contact .title {
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@
 .about-content .title span,
 .lifework .title span,
 .contributions .title span,
-.services .title span,
+.significance .title span,
 .contact .title span {
   color: var(--color);
   font-size: 50px;
@@ -73,8 +73,8 @@
 .lifework .title span::after,
 .contributions .title span::before,
 .contributions .title span::after,
-.services .title span::before,
-.services .title span::after,
+.significance .title span::before,
+.significance .title span::after,
 .contact .title span::before,
 .contact .title span::after {
   content: "";
@@ -89,7 +89,7 @@
 .about-content .title span::after,
 .lifework .title span::after,
 .contributions .title span::after,
-.services .title span::after,
+.significance .title span::after,
 .contact .title span::after {
   bottom: -7px;
   width: 70%;

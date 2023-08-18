@@ -4,7 +4,7 @@ am4core.ready(function () {
   // Themes end
 
   var chart = am4core.create("chartdiv", am4plugins_timeline.CurveChart);
-  chart.curveContainer.padding(0, 100, 0, 120);
+  chart.curveContainer.padding(0, 100, 0, 100);
   chart.maskBullets = false;
 
   var colorSet = new am4core.ColorSet();
@@ -12,57 +12,83 @@ am4core.ready(function () {
   chart.data = [
     {
       category: "",
-      year: "1990",
-      size: 13,
-      text: "Lorem ipsum dolor",
+      year: "1887",
+      size: 70,
+      pos: 1,
+      text: "Born on December 22 in Erode, Tamil Nadu, India.",
+      smalltXt: "Birth",
     },
     {
       category: "",
-      year: "1995",
-      size: 5,
-      text: "Sit amet",
+      year: "1892",
+      size: 70,
+      pos: 2,
+      text: "Shows early interest in mathematics, mastering basic concepts on his own.",
+      smalltXt: "Interest",
     },
     {
       category: "",
-      year: "2000",
-      size: 9,
-      text: "Consectetur adipiscing elit",
+      year: "1703",
+      size: 70,
+      pos: 3,
+      text: "Begins independently exploring advanced mathematical topics and developing his unique theorems.",
+      smalltXt: "Exploration",
     },
     {
       category: "",
-      year: "2005",
-      size: 12,
-      text: "Sed do eiusmod",
+      year: "1910",
+      size: 70,
+      pos: 4,
+      text: "Publishes his first research paper on Bernoulli numbers and Euler's constant in the Journal of the Indian Mathematical Society.",
+      smalltXt: "First Research",
     },
     {
       category: "",
-      year: "2010",
-      size: 3,
-      text: "Tempor incididunt",
+      year: "1913",
+      size: 70,
+      pos: 5,
+      text: "Corresponds with G.H. Hardy, a prominent mathematician at the University of Cambridge, who recognizes Ramanujan's exceptional talent.",
+      smalltXt: "G.H. Hardy",
     },
     {
       category: "",
-      year: "2015",
-      size: 9,
-      text: "Ut labore et dolore",
+      year: "1914",
+      size: 70,
+      pos: 6,
+      text: "Travels to England to work with Hardy at the University of Cambridge.",
+      smalltXt: "England",
     },
     {
       category: "",
-      year: "2020",
-      size: 4,
-      text: "Magna aliqua",
+      year: "1916",
+      size: 70,
+      pos: 7,
+      text: "Becomes a Fellow of the Royal Society, a prestigious honor for his groundbreaking work on partitions and mock theta functions.",
+      smalltXt: "Royal Society",
     },
     {
       category: "",
-      year: "2025",
-      size: 3,
-      text: "Ut enim ad minim veniam",
+      year: "1918",
+      size: 70,
+      pos: 8,
+      text: "Ramanujan's health deteriorates due to illness and he returns to India.",
+      smalltXt: "Poor Health",
     },
     {
       category: "",
-      size: 10,
-      year: "2030",
-      text: "Quis nostrud exercitation",
+      year: "1919",
+      size: 70,
+      pos: 9,
+      text: "Continues to work on mathematics while battling health issues.",
+      smalltXt: "Continues Work",
+    },
+    {
+      category: "",
+      year: "1920",
+      size: 70,
+      pos: 10,
+      text: "Srinivasa Ramanujan passes away on April 26, at the age of 32, leaving behind notebooks filled with unpublished theorems and conjectures.",
+      smalltXt: "Death",
     },
   ];
 
@@ -90,7 +116,7 @@ am4core.ready(function () {
 
   var series = chart.series.push(new am4plugins_timeline.CurveLineSeries());
   series.strokeOpacity = 0;
-  series.dataFields.dateX = "year";
+  series.dataFields.dateX = "pos";
   series.dataFields.categoryY = "category";
   series.dataFields.value = "size";
   series.baseAxis = categoryAxis;
@@ -128,7 +154,7 @@ am4core.ready(function () {
   series.heatRules.push({
     target: circle,
     min: 20,
-    max: 50,
+    max: 70,
     property: "radius",
   });
   circle.adapter.add("fill", function (fill, target) {
@@ -136,13 +162,14 @@ am4core.ready(function () {
       return chart.colors.getIndex(target.dataItem.index);
     }
   });
-  circle.tooltipText = "{text}: {value}";
+  circle.tooltipText = "{text}";
   circle.adapter.add("tooltipY", function (tooltipY, target) {
     return -target.pixelRadius - 4;
   });
 
   var yearLabel = bullet.createChild(am4core.Label);
   yearLabel.text = "{year}";
+  yearLabel.fontSize = 20;
   yearLabel.strokeOpacity = 0;
   yearLabel.fill = am4core.color("#fff");
   yearLabel.horizontalCenter = "middle";
@@ -150,10 +177,12 @@ am4core.ready(function () {
   yearLabel.interactionsEnabled = false;
 
   var label = bullet.createChild(am4core.Label);
-  label.propertyFields.text = "text";
+  label.propertyFields.text = "smalltXt";
   label.strokeOpacity = 0;
   label.horizontalCenter = "right";
   label.verticalCenter = "middle";
+  label.fontSize = 12;
+  label.fill = am4core.color("#fff");
 
   label.adapter.add("opacity", function (opacity, target) {
     if (target.dataItem) {
