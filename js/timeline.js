@@ -28,7 +28,7 @@ am4core.ready(function () {
     },
     {
       category: "",
-      year: "1703",
+      year: "1903",
       size: 70,
       pos: 3,
       text: "Begins independently exploring advanced mathematical topics and developing his unique theorems.",
