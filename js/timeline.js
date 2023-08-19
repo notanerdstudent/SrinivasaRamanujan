@@ -87,7 +87,7 @@ am4core.ready(function () {
       year: "1920",
       size: 70,
       pos: 10,
-      text: "Srinivasa Ramanujan passes away on April 26, at the age of 32, leaving behind notebooks filled with unpublished theorems and conjectures.",
+      text: "Srinivasa Ramanujan passes away at the age of 32, leaving behind notebooks filled with unpublished theorems and conjectures.",
       smalltXt: "Death",
     },
   ];

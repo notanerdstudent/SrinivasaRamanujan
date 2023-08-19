@@ -127,21 +127,22 @@ footer {
   .footer-menu ul {
     margin-top: 10px;
     margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(6, 1fr); */
   }
 }
 
 @media screen and (max-width: 500px) {
   .footer-menu ul {
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     gap: 10px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .footer-menu ul {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 10px;
   }
 }
